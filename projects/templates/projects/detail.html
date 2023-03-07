@@ -6,6 +6,7 @@
             <h1>{{ list.name }}</h1>
             <p></p>
             <h2>Tasks</h2>
+            <li><a href="{% url 'create_task' %}">Create a new task</a></li>
             {% if list.tasks.all|length > 0 %}
             <table>
                 <thead>
